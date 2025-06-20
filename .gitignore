@@ -1,0 +1,55 @@
+# -----------------------
+# Java build artifacts
+# -----------------------
+/target/
+*.class
+*.jar
+*.war
+*.ear
+
+# -----------------------
+# Gradle
+# -----------------------
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+**/build/
+
+# Wrapper logs
+gradle-app.setting
+gradle-app.setting.lock
+
+# -----------------------
+# Maven
+# -----------------------
+.mvn/
+**/target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# -----------------------
+# IntelliJ IDEA
+# -----------------------
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# -----------------------
+# macOS system files
+# -----------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# -----------------------
+# Logs & temp files
+# -----------------------
+*.log
+*.tmp
+*.swp
+*.bak
