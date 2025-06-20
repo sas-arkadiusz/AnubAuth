@@ -30,7 +30,7 @@ class UserTokenParserIntegrationTest {
         assertThat(decodedJWT.getSubject()).isEqualTo(user.email());
         assertThat(decodedJWT.getClaim(TokenClaims.USER_ID.name()).asString()).isEqualTo(user.id().toString());
         assertThat(decodedJWT.getClaim(TokenClaims.EMAIL.name()).asString()).isEqualTo(user.email());
-        assertThat(decodedJWT.getClaim(TokenClaims.ROLE.name()).asString()).isEqualTo(user.role());
+        assertThat(decodedJWT.getClaim(TokenClaims.ROLE.name()).asList(String.class)).isEqualTo(user.roles());
     }
 }
 

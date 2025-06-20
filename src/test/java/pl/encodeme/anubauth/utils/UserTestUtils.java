@@ -4,6 +4,8 @@ import net.bytebuddy.utility.RandomString;
 import pl.encodeme.anubauth.model.User;
 import pl.encodeme.anubauth.model.UserId;
 
+import java.util.List;
+
 public class UserTestUtils {
 
     public static User generateRandomUser() {
@@ -12,7 +14,7 @@ public class UserTestUtils {
                 .username(RandomString.make(15))
                 .email(RandomString.make(15) + "@example.com")
                 .password(RandomString.make(15))
-                .role("USER")
+                .roles(List.of("USER"))
                 .build();
     }
 }
