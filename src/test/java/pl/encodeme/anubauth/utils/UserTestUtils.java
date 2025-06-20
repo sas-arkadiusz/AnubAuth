@@ -10,7 +10,7 @@ public class UserTestUtils {
 
     public static User generateRandomUser() {
         return User.builder()
-                .id(UserId.generateUserId())
+                .userId(UserId.generateUserId())
                 .username(RandomString.make(15))
                 .email(RandomString.make(15) + "@example.com")
                 .password(RandomString.make(15))

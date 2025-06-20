@@ -1,4 +1,4 @@
 package pl.encodeme.anubauth.jwt;
 
-record AccessToken(String value) {
+public record AccessToken(String value) {
 }

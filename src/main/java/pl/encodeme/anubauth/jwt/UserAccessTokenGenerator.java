@@ -28,7 +28,7 @@ class UserAccessTokenGenerator implements UserTokenGenerator {
                 .withExpiresAt(Instant.now().plusSeconds(accessTokenExpirationInSeconds))
                 .withSubject(user.email())
                 .withIssuer(jwtIssuer)
-                .withClaim(TokenClaims.USER_ID.name(), user.id().toString())
+                .withClaim(TokenClaims.USER_ID.name(), user.userId().toString())
                 .withClaim(TokenClaims.EMAIL.name(), user.email())
                 .withClaim(TokenClaims.ROLE.name(), user.roles())
                 .sign(algorithm);
