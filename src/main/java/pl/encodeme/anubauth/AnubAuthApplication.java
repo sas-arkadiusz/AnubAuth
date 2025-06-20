@@ -9,5 +9,4 @@ public class AnubAuthApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AnubAuthApplication.class, args);
 	}
-
 }
